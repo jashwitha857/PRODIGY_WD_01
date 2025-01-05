@@ -1,0 +1,68 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and content styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Styling for navigation bar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li {
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: #ff6347; /* Tomato color on hover */
+}
+
+/* Content sections */
+.content {
+    margin-top: 60px; /* Push content down below navbar */
+    padding: 20px;
+}
+
+section {
+    margin: 50px 0;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Scroll effect when scrolled */
+.scrolled {
+    background-color: #222; /* Darker background when scrolled */
+}
+
